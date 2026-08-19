@@ -1,69 +1,61 @@
 export interface Service {
   title: string;
   description: string;
-  href: string;
   capabilities: string[];
+  href: string;
 }
 
 export const services: Service[] = [
   {
-    title: "Cloud & Infrastructure",
+    title: "Cloud e infraestructura",
     description:
-      "Diseñamos, migramos y administramos infraestructura tecnológica segura, escalable y preparada para el crecimiento.",
-    href: "/cloud",
+      "Diseño, implementación y administración de infraestructura cloud y entornos empresariales.",
     capabilities: [
       "Azure",
       "AWS",
-      "VMware",
-      "Proxmox",
-      "Docker",
       "Kubernetes",
       "Terraform",
+      "Infraestructura híbrida",
     ],
+    href: "/cloud",
   },
   {
     title: "Ciberseguridad",
     description:
-      "Evaluamos, fortalecemos y monitoreamos la seguridad de tu infraestructura para reducir riesgos y proteger la operación.",
-    href: "/security",
+      "Protección, monitoreo y fortalecimiento de la seguridad de tus sistemas y datos.",
     capabilities: [
-      "Auditorías",
+      "Seguridad cloud",
       "Hardening",
-      "SIEM",
-      "Wazuh",
-      "Microsoft Sentinel",
-      "WAF",
-      "Firewalls",
-    ],
-  },
-  {
-    title: "Managed IT",
-    description:
-      "Nos convertimos en tu equipo externo de tecnología para mantener servidores, bases de datos, respaldos y plataformas operativas.",
-    href: "/services",
-    capabilities: [
-      "Linux",
-      "Windows Server",
-      "Bases de datos",
-      "Backups",
       "Monitoreo",
-      "Microsoft 365",
-      "Soporte",
+      "Gestión de accesos",
+      "Evaluación de seguridad",
     ],
+    href: "/security",
   },
   {
-    title: "Business & Technology",
+    title: "Servicios administrados",
     description:
-      "Integramos aplicaciones empresariales, licenciamiento, hardware y servicios tecnológicos para cubrir las necesidades de tu negocio.",
-    href: "/business",
+      "Administración y soporte continuo de infraestructura, plataformas y servicios tecnológicos.",
     capabilities: [
-      "ERP",
-      "Odoo Community",
-      "Aplicaciones empresariales",
-      "Microsoft Licensing",
+      "Soporte TI",
+      "Monitoreo",
+      "Administración de servidores",
+      "Backups",
+      "Mantenimiento",
+    ],
+    href: "/services",
+  },
+  {
+    title: "Tecnología empresarial",
+    description:
+      "Soluciones de hardware, software, licenciamiento y tecnología para las necesidades de tu empresa.",
+    capabilities: [
       "Hardware",
-      "Migraciones",
+      "Software",
+      "Licenciamiento",
+      "Equipamiento empresarial",
       "Consultoría",
     ],
+    href: "/technology",
   },
 ];
