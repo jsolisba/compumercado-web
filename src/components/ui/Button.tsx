@@ -17,16 +17,16 @@ export default function Button({
 }: ButtonProps) {
   const styles = {
     primary:
-      "bg-blue-600 hover:bg-blue-500 text-white",
+      "bg-blue-600 text-white hover:bg-blue-700 shadow-sm hover:shadow-md",
     secondary:
-      "border border-slate-600 text-white hover:bg-slate-800",
+      "border border-neutral-300 bg-white text-neutral-900 hover:border-neutral-400 hover:bg-neutral-50",
   };
 
   return (
     <Link
       href={href}
       className={cn(
-        "inline-flex items-center justify-center rounded-xl px-6 py-3 font-semibold transition-all duration-300",
+        "inline-flex items-center justify-center rounded-lg px-6 py-3 font-semibold transition-all duration-200",
         styles[variant],
         className
       )}
