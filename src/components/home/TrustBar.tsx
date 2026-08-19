@@ -1,8 +1,8 @@
 const capabilities = [
-  "Cloud & Infrastructure",
-  "Cybersecurity",
-  "Managed Services",
-  "Enterprise Technology",
+  "Cloud e infraestructura",
+  "Ciberseguridad",
+  "Servicios administrados",
+  "Tecnología empresarial",
 ];
 
 export default function TrustBar() {

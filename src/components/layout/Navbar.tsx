@@ -1,12 +1,12 @@
 import Link from "next/link";
 import { navigation } from "@/data/navigation";
+import LanguageSwitcher from "@/components/layout/LanguageSwitcher";
 
 export default function Navbar() {
   return (
     <header className="sticky top-0 z-50 border-b border-neutral-200/80 bg-white/95 backdrop-blur">
       <div className="mx-auto flex h-20 max-w-7xl items-center justify-between px-6">
-        
-        {/* Brand */}
+
         <Link
           href="/"
           className="text-xl font-bold tracking-tight text-neutral-950"
@@ -15,7 +15,6 @@ export default function Navbar() {
           Compu<span className="text-blue-600">Mercado</span>
         </Link>
 
-        {/* Navigation */}
         <nav
           aria-label="Navegación principal"
           className="hidden items-center gap-7 lg:flex"
@@ -31,13 +30,16 @@ export default function Navbar() {
           ))}
         </nav>
 
-        {/* CTA */}
-        <Link
-          href="/contact"
-          className="rounded-lg bg-blue-600 px-5 py-2.5 text-sm font-semibold text-white shadow-sm transition-all hover:bg-blue-700 hover:shadow-md"
-        >
-          Solicitar cotización
-        </Link>
+        <div className="flex items-center gap-3">
+          <LanguageSwitcher />
+
+          <Link
+            href="/contact"
+            className="rounded-lg bg-blue-600 px-5 py-2.5 text-sm font-semibold text-white shadow-sm transition-all hover:bg-blue-700 hover:shadow-md"
+          >
+            Solicitar cotización
+          </Link>
+        </div>
       </div>
     </header>
   );
