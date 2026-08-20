@@ -1,12 +1,25 @@
 const footerLinks = [
-  { name: "Tienda", href: "/store" },
-  { name: "Cloud", href: "/cloud" },
-  { name: "Servicios", href: "/services" },
-  { name: "Seguridad", href: "/security" },
-  { name: "Licencias", href: "/licensing" },
-  { name: "Nosotros", href: "/about" },
-  { name: "Blog", href: "/blog" },
-  { name: "Contacto", href: "/contact" },
+  {
+    name: "Tienda",
+    href: "https://compumercado.shop/",
+    external: true,
+  },
+  {
+    name: "Servicios",
+    href: "/services",
+  },
+  {
+    name: "Soluciones",
+    href: "/solutions",
+  },
+  {
+    name: "Nosotros",
+    href: "/about",
+  },
+  {
+    name: "Contacto",
+    href: "/contact",
+  },
 ];
 
 export default function Footer() {
@@ -20,9 +33,9 @@ export default function Footer() {
             </div>
 
             <p className="mt-4 max-w-sm text-sm leading-6 text-neutral-600">
-              Tecnología empresarial, infraestructura, nube,
-              ciberseguridad y servicios administrados para empresas
-              que necesitan seguir avanzando.
+              Tecnología para personas y empresas. Desde equipos y reparación
+              hasta infraestructura, nube, ciberseguridad y servicios
+              administrados.
             </p>
           </div>
 
@@ -34,12 +47,23 @@ export default function Footer() {
             <ul className="mt-4 space-y-3">
               {footerLinks.map((link) => (
                 <li key={link.href}>
-                  <a
-                    href={link.href}
-                    className="text-sm text-neutral-600 transition-colors hover:text-blue-600"
-                  >
-                    {link.name}
-                  </a>
+                  {link.external ? (
+                    <a
+                      href={link.href}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="text-sm text-neutral-600 transition-colors hover:text-blue-600"
+                    >
+                      {link.name}
+                    </a>
+                  ) : (
+                    <a
+                      href={link.href}
+                      className="text-sm text-neutral-600 transition-colors hover:text-blue-600"
+                    >
+                      {link.name}
+                    </a>
+                  )}
                 </li>
               ))}
             </ul>
@@ -47,19 +71,19 @@ export default function Footer() {
 
           <div>
             <h2 className="text-sm font-semibold text-neutral-950">
-              Hablemos
+              ¿Necesitas ayuda?
             </h2>
 
             <p className="mt-4 text-sm leading-6 text-neutral-600">
-              ¿Necesitas ayuda para diseñar, implementar o administrar
-              tu infraestructura tecnológica?
+              Cuéntanos qué necesitas y te ayudamos a encontrar la solución
+              adecuada.
             </p>
 
             <a
               href="/contact"
               className="mt-5 inline-flex text-sm font-semibold text-blue-600 transition-colors hover:text-blue-700"
             >
-              Contacto →
+              Hablemos →
             </a>
           </div>
         </div>

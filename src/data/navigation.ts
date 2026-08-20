@@ -15,16 +15,12 @@ export const navigation: NavigationItem[] = [
     href: "/services",
   },
   {
-    name: "Cloud",
-    href: "/cloud",
+    name: "Soluciones",
+    href: "/solutions",
   },
   {
-    name: "Seguridad",
-    href: "/security",
-  },
-  {
-    name: "Tecnología",
-    href: "/technology",
+    name: "Nosotros",
+    href: "/about",
   },
   {
     name: "Contacto",
