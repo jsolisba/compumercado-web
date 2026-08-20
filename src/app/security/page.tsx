@@ -140,7 +140,7 @@ export default function SecurityPage() {
                   </Link>
 
                   <a
-                    href="https://wa.me/"
+                    href="https://wa.me/50670154363"
                     className="inline-flex items-center justify-center rounded-lg border border-white/20 bg-white/5 px-6 py-3 font-semibold text-white transition-colors hover:bg-white/10"
                   >
                     Hablar por WhatsApp
@@ -402,7 +402,7 @@ export default function SecurityPage() {
                   </Link>
 
                   <a
-                    href="https://wa.me/"
+                    href="https://wa.me/50670154363"
                     className="inline-flex items-center justify-center rounded-lg border border-white/30 px-6 py-3 font-semibold text-white transition-colors hover:bg-white/10"
                   >
                     Escribir por WhatsApp
