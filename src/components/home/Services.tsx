@@ -9,16 +9,17 @@ export default function Services() {
       <Container>
         <div className="max-w-3xl">
           <div className="mb-4 text-sm font-semibold uppercase tracking-wider text-blue-600">
-            Nuestras soluciones
+            ¿Qué necesitas resolver?
           </div>
 
           <h2 className="text-4xl font-bold tracking-tight text-neutral-950 sm:text-5xl">
-            Todo lo que tu empresa necesita para operar su tecnología.
+            Tecnología que resuelve problemas reales.
           </h2>
 
           <p className="mt-6 text-lg leading-8 text-neutral-600">
-            Diseñamos, implementamos y administramos soluciones tecnológicas
-            adaptadas a la realidad de cada empresa.
+            Desde reparar o equipar una computadora hasta diseñar y administrar
+            infraestructura empresarial. Encontramos la solución adecuada para
+            cada necesidad.
           </p>
         </div>
 
@@ -33,7 +34,11 @@ export default function Services() {
                   {service.title}
                 </h3>
 
-                <p className="mt-4 text-base leading-7 text-neutral-600">
+                <p className="mt-4 text-base font-medium leading-7 text-neutral-800">
+                  {service.problem}
+                </p>
+
+                <p className="mt-3 text-base leading-7 text-neutral-600">
                   {service.description}
                 </p>
 
@@ -53,7 +58,7 @@ export default function Services() {
                     href={service.href}
                     className="inline-flex items-center text-sm font-semibold text-blue-600 transition-colors group-hover:text-blue-700"
                   >
-                    Conocer la solución
+                    Ver cómo podemos ayudarte
                     <span
                       aria-hidden="true"
                       className="ml-2 transition-transform duration-300 group-hover:translate-x-1"

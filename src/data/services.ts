@@ -1,5 +1,6 @@
 export interface Service {
   title: string;
+  problem: string;
   description: string;
   capabilities: string[];
   href: string;
@@ -7,22 +8,26 @@ export interface Service {
 
 export const services: Service[] = [
   {
-    title: "Cloud e infraestructura",
+    title: "Tu tecnología no puede detener tu negocio",
+    problem:
+      "Servidores lentos, sistemas que fallan o una infraestructura que ya no soporta el crecimiento.",
     description:
-      "Diseño, implementación y administración de infraestructura cloud y entornos empresariales.",
+      "Diseñamos y administramos infraestructura moderna para que tus sistemas sean estables, escalables y estén disponibles cuando los necesitas.",
     capabilities: [
-      "Azure",
-      "AWS",
+      "Cloud",
+      "Servidores",
       "Kubernetes",
-      "Terraform",
+      "Redes",
       "Infraestructura híbrida",
     ],
     href: "/cloud",
   },
   {
-    title: "Ciberseguridad",
+    title: "¿Te preocupa la seguridad de tu información?",
+    problem:
+      "Un acceso no autorizado, una vulnerabilidad o una mala configuración puede convertirse en un problema serio.",
     description:
-      "Protección, monitoreo y fortalecimiento de la seguridad de tus sistemas y datos.",
+      "Ayudamos a proteger tus sistemas, usuarios y datos mediante controles de seguridad, monitoreo y buenas prácticas.",
     capabilities: [
       "Seguridad cloud",
       "Hardening",
@@ -33,28 +38,32 @@ export const services: Service[] = [
     href: "/security",
   },
   {
-    title: "Servicios administrados",
+    title: "Tu equipo necesita soporte tecnológico",
+    problem:
+      "No quieres que tus colaboradores pierdan tiempo resolviendo problemas de servidores, respaldos o infraestructura.",
     description:
-      "Administración y soporte continuo de infraestructura, plataformas y servicios tecnológicos.",
+      "Nos encargamos de la operación y mantenimiento de tu tecnología para que puedas concentrarte en tu negocio.",
     capabilities: [
       "Soporte TI",
       "Monitoreo",
-      "Administración de servidores",
+      "Servidores",
       "Backups",
       "Mantenimiento",
     ],
     href: "/services",
   },
   {
-    title: "Tecnología empresarial",
+    title: "Necesitas la tecnología adecuada",
+    problem:
+      "Comprar equipos, software o licencias sin conocer realmente lo que necesitas puede terminar costando más.",
     description:
-      "Soluciones de hardware, software, licenciamiento y tecnología para las necesidades de tu empresa.",
+      "Te ayudamos a elegir, implementar y mantener hardware, software y tecnología adecuada para tu operación.",
     capabilities: [
-      "Hardware",
+      "Computadoras",
+      "Servidores",
       "Software",
       "Licenciamiento",
       "Equipamiento empresarial",
-      "Consultoría",
     ],
     href: "/technology",
   },

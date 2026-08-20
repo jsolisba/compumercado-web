@@ -1,26 +1,26 @@
 import Container from "@/components/ui/Container";
 import Section from "@/components/ui/Section";
 
-const advantages = [
+const reasons = [
   {
-    title: "Experiencia real",
+    title: "Hablamos tu idioma",
     description:
-      "Experiencia práctica en cloud, infraestructura, DevOps, bases de datos y ciberseguridad.",
+      "No necesitas ser experto en tecnología. Te explicamos qué está pasando, qué opciones tienes y cuál tiene más sentido para ti.",
   },
   {
-    title: "Un solo aliado tecnológico",
+    title: "Resolvemos, no complicamos",
     description:
-      "Hardware, software, cloud, seguridad y servicios administrados bajo una misma relación.",
+      "Buscamos soluciones prácticas que funcionen en el mundo real, desde un equipo que necesita reparación hasta infraestructura empresarial.",
   },
   {
-    title: "Enfoque proactivo",
+    title: "Experiencia que se aplica",
     description:
-      "Buscamos prevenir problemas, mejorar la estabilidad y reducir riesgos antes de que impacten tu operación.",
+      "Trabajamos con infraestructura, cloud, servidores, redes, seguridad y plataformas empresariales. Esa experiencia la ponemos al servicio de cada proyecto.",
   },
   {
-    title: "Soporte humano",
+    title: "Un aliado cuando lo necesitas",
     description:
-      "Hablas con especialistas que entienden la tecnología y el contexto de tu negocio.",
+      "Puedes acudir a nosotros para comprar o reparar un equipo, resolver un problema o planificar la tecnología que tu empresa necesita.",
   },
 ];
 
@@ -34,28 +34,27 @@ export default function WhyCompuMercado() {
           </div>
 
           <h2 className="text-4xl font-bold tracking-tight text-neutral-950 sm:text-5xl">
-            No solo implementamos tecnología. Nos hacemos responsables de que
-            funcione.
+            Tecnología entendible, soluciones que funcionan.
           </h2>
 
           <p className="mt-6 text-lg leading-8 text-neutral-600">
-            Queremos ser el equipo tecnológico en el que puedas confiar para
-            mantener tu operación segura, estable y preparada para crecer.
+            No importa si sabes mucho o poco de tecnología. Queremos que
+            entiendas el problema y tengas claro cómo podemos ayudarte.
           </p>
         </div>
 
         <div className="mt-14 grid gap-6 sm:grid-cols-2">
-          {advantages.map((advantage) => (
+          {reasons.map((reason) => (
             <article
-              key={advantage.title}
-              className="rounded-2xl border border-neutral-200 bg-neutral-50 p-8"
+              key={reason.title}
+              className="rounded-2xl border border-neutral-200 bg-neutral-50 p-8 transition-all duration-300 hover:border-blue-200 hover:bg-white hover:shadow-md"
             >
               <h3 className="text-xl font-bold text-neutral-950">
-                {advantage.title}
+                {reason.title}
               </h3>
 
               <p className="mt-3 leading-7 text-neutral-600">
-                {advantage.description}
+                {reason.description}
               </p>
             </article>
           ))}
