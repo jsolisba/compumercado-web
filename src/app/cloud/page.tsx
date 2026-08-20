@@ -18,7 +18,7 @@ const capabilities = [
   {
     title: "Kubernetes",
     description:
-      "Diseñamos y operamos plataformas Kubernetes para aplicaciones que necesitan escalabilidad y alta disponibilidad.",
+      "Diseñamos y operamos plataformas Kubernetes para aplicaciones que necesitan escalabilidad y disponibilidad.",
   },
   {
     title: "Infraestructura como código",
@@ -28,7 +28,7 @@ const capabilities = [
   {
     title: "Infraestructura híbrida",
     description:
-      "Integramos servidores locales con servicios cloud para aprovechar las ventajas de ambos entornos.",
+      "Integramos servidores locales con servicios cloud cuando necesitas aprovechar ambos entornos.",
   },
   {
     title: "Migraciones",
@@ -38,11 +38,11 @@ const capabilities = [
 ];
 
 const benefits = [
-  "Infraestructura diseñada para las necesidades reales de tu negocio",
+  "Infraestructura alineada con las necesidades reales de tu negocio",
   "Mayor estabilidad y disponibilidad de tus sistemas",
-  "Seguridad desde el diseño de la infraestructura",
-  "Reducción de tareas manuales mediante automatización",
-  "Visibilidad sobre el rendimiento y estado de tus plataformas",
+  "Seguridad considerada desde el diseño",
+  "Menos tareas manuales mediante automatización",
+  "Mayor visibilidad sobre el estado de tus plataformas",
   "Una arquitectura preparada para crecer contigo",
 ];
 
@@ -51,29 +51,34 @@ const process = [
     number: "01",
     title: "Entendemos tu situación",
     description:
-      "Analizamos tu infraestructura actual, tus aplicaciones, necesidades y objetivos.",
+      "Revisamos lo que tienes actualmente, qué está funcionando, qué te preocupa y hacia dónde quieres llevar tu operación.",
   },
   {
     number: "02",
     title: "Diseñamos la solución",
     description:
-      "Proponemos una arquitectura adecuada a tus requerimientos técnicos y presupuesto.",
+      "Definimos una arquitectura adecuada a tus necesidades técnicas, presupuesto y crecimiento esperado.",
   },
   {
     number: "03",
     title: "Implementamos",
     description:
-      "Construimos y configuramos la infraestructura siguiendo buenas prácticas de seguridad y operación.",
+      "Construimos y configuramos la infraestructura siguiendo buenas prácticas de seguridad, automatización y operación.",
   },
   {
     number: "04",
-    title: "Acompañamos la operación",
+    title: "Te acompañamos",
     description:
-      "Podemos continuar con monitoreo, mantenimiento, soporte y evolución de la plataforma.",
+      "Si lo necesitas, continuamos con monitoreo, mantenimiento, soporte y evolución de la plataforma.",
   },
 ];
 
 const faqs = [
+  {
+    question: "¿Tengo que migrar todo a la nube?",
+    answer:
+      "No. Primero evaluamos tu situación. En algunos casos la mejor alternativa puede ser cloud, infraestructura local o una combinación de ambas.",
+  },
   {
     question: "¿Trabajan solamente con Azure?",
     answer:
@@ -87,7 +92,7 @@ const faqs = [
   {
     question: "¿Pueden migrar mis servidores a la nube?",
     answer:
-      "Sí. Analizamos las aplicaciones y dependencias existentes, diseñamos la estrategia de migración y ejecutamos el proceso de forma planificada.",
+      "Sí. Analizamos las aplicaciones y dependencias existentes, diseñamos una estrategia y ejecutamos la migración de forma planificada.",
   },
   {
     question: "¿También ofrecen administración después de la implementación?",
@@ -112,14 +117,14 @@ export default function CloudPage() {
                 </div>
 
                 <h1 className="text-5xl font-bold tracking-tight sm:text-6xl">
-                  Infraestructura tecnológica preparada para hacer crecer tu
-                  empresa.
+                  Una infraestructura que te permita trabajar tranquilo y
+                  crecer con tu empresa.
                 </h1>
 
                 <p className="mt-7 max-w-2xl text-lg leading-8 text-slate-300">
                   Diseñamos, implementamos y administramos infraestructura
-                  cloud y empresarial segura, estable y preparada para las
-                  necesidades de tu negocio.
+                  cloud y empresarial para que tus sistemas sean más estables,
+                  seguros y fáciles de mantener.
                 </p>
 
                 <div className="mt-9 flex flex-col gap-4 sm:flex-row">
@@ -127,11 +132,13 @@ export default function CloudPage() {
                     href="/contact"
                     className="inline-flex items-center justify-center rounded-lg bg-blue-600 px-6 py-3 font-semibold text-white transition-colors hover:bg-blue-500"
                   >
-                    Solicitar una evaluación
+                    Cuéntanos qué necesitas
                   </Link>
 
                   <a
                     href="https://wa.me/50670154363"
+                    target="_blank"
+                    rel="noopener noreferrer"
                     className="inline-flex items-center justify-center rounded-lg border border-white/20 bg-white/5 px-6 py-3 font-semibold text-white transition-colors hover:bg-white/10"
                   >
                     Hablar por WhatsApp
@@ -139,8 +146,8 @@ export default function CloudPage() {
                 </div>
 
                 <p className="mt-5 text-sm text-slate-400">
-                  Cuéntanos qué necesitas y evaluamos la mejor alternativa para
-                  tu empresa.
+                  No necesitas saber exactamente qué tecnología necesitas.
+                  Podemos ayudarte a definirla.
                 </p>
               </div>
 
@@ -181,12 +188,12 @@ export default function CloudPage() {
             <div className="grid gap-12 lg:grid-cols-2 lg:items-center">
               <div>
                 <div className="text-sm font-semibold uppercase tracking-wider text-blue-600">
-                  El problema
+                  Lo que suele pasar
                 </div>
 
                 <h2 className="mt-4 text-4xl font-bold tracking-tight text-neutral-950 sm:text-5xl">
-                  Una infraestructura que funciona hoy no siempre está
-                  preparada para mañana.
+                  La infraestructura puede crecer hasta convertirse en un
+                  problema.
                 </h2>
               </div>
 
@@ -194,13 +201,18 @@ export default function CloudPage() {
                 <p>
                   Servidores difíciles de mantener, aplicaciones que crecen
                   más rápido que la infraestructura, procesos manuales y falta
-                  de visibilidad pueden convertirse rápidamente en problemas
-                  para una empresa.
+                  de visibilidad pueden terminar afectando la operación.
                 </p>
 
                 <p>
-                  Nuestro trabajo es convertir esa complejidad en una
-                  plataforma tecnológica estable, segura y administrable.
+                  También es común tener infraestructura que funciona, pero
+                  que nadie quiere tocar por miedo a provocar una interrupción.
+                </p>
+
+                <p>
+                  Ahí es donde podemos ayudarte: entendemos lo que tienes,
+                  identificamos qué necesita mejorar y construimos una
+                  infraestructura que puedas administrar con mayor confianza.
                 </p>
               </div>
             </div>
@@ -212,17 +224,17 @@ export default function CloudPage() {
           <Container>
             <div className="max-w-3xl">
               <div className="text-sm font-semibold uppercase tracking-wider text-blue-600">
-                Qué hacemos
+                Qué podemos hacer
               </div>
 
               <h2 className="mt-4 text-4xl font-bold tracking-tight text-neutral-950 sm:text-5xl">
-                Soluciones de infraestructura de principio a fin.
+                Desde un servidor hasta una plataforma completa.
               </h2>
 
               <p className="mt-6 text-lg leading-8 text-neutral-600">
-                Desde un servidor individual hasta plataformas cloud y
-                Kubernetes, diseñamos la solución de acuerdo con la realidad
-                de tu empresa.
+                No todas las empresas necesitan la misma infraestructura.
+                Partimos de tu situación y construimos una solución acorde con
+                tu realidad.
               </p>
             </div>
 
@@ -230,7 +242,7 @@ export default function CloudPage() {
               {capabilities.map((capability) => (
                 <article
                   key={capability.title}
-                  className="rounded-2xl border border-neutral-200 bg-white p-7"
+                  className="rounded-2xl border border-neutral-200 bg-white p-7 transition-all duration-300 hover:-translate-y-1 hover:border-blue-200 hover:shadow-lg"
                 >
                   <h3 className="text-xl font-bold text-neutral-950">
                     {capability.title}
@@ -255,13 +267,13 @@ export default function CloudPage() {
                 </div>
 
                 <h2 className="mt-4 text-4xl font-bold tracking-tight text-neutral-950 sm:text-5xl">
-                  Tecnología que trabaja para tu negocio.
+                  Tecnología que deja de ser una preocupación constante.
                 </h2>
 
                 <p className="mt-6 text-lg leading-8 text-neutral-600">
-                  Una buena infraestructura no debería convertirse en una
-                  preocupación constante. Debe permitir que tu equipo se
-                  concentre en hacer crecer la empresa.
+                  Una buena infraestructura debería darle estabilidad a tu
+                  empresa y permitir que tu equipo se concentre en el negocio,
+                  no en apagar incendios tecnológicos.
                 </p>
               </div>
 
@@ -292,8 +304,13 @@ export default function CloudPage() {
               </div>
 
               <h2 className="mt-4 text-4xl font-bold tracking-tight sm:text-5xl">
-                De la situación actual a una infraestructura mejor.
+                No empezamos por la tecnología. Empezamos por entenderte.
               </h2>
+
+              <p className="mt-6 text-lg leading-8 text-slate-400">
+                Antes de recomendar una plataforma, queremos entender qué
+                necesitas resolver y qué impacto tiene para tu empresa.
+              </p>
             </div>
 
             <div className="mt-14 grid gap-6 md:grid-cols-2 lg:grid-cols-4">
@@ -327,13 +344,14 @@ export default function CloudPage() {
                 </div>
 
                 <h2 className="mt-4 text-4xl font-bold tracking-tight sm:text-5xl">
-                  ¿Necesitas mejorar la infraestructura de tu empresa?
+                  ¿Hay algo en tu infraestructura que te preocupa?
                 </h2>
 
                 <p className="mt-6 text-lg leading-8 text-blue-100">
                   Cuéntanos qué tienes actualmente, qué problema estás
-                  enfrentando y hacia dónde quieres llegar. Evaluaremos tu
-                  situación y te propondremos el siguiente paso.
+                  enfrentando o qué quieres mejorar. No necesitas tener la
+                  solución definida; podemos ayudarte a encontrar el siguiente
+                  paso.
                 </p>
 
                 <div className="mt-9 flex flex-col gap-4 sm:flex-row">
@@ -341,11 +359,13 @@ export default function CloudPage() {
                     href="/contact"
                     className="inline-flex items-center justify-center rounded-lg bg-white px-6 py-3 font-semibold text-blue-700 transition-colors hover:bg-blue-50"
                   >
-                    Solicitar una evaluación
+                    Cuéntanos tu situación
                   </Link>
 
                   <a
                     href="https://wa.me/50670154363"
+                    target="_blank"
+                    rel="noopener noreferrer"
                     className="inline-flex items-center justify-center rounded-lg border border-white/30 px-6 py-3 font-semibold text-white transition-colors hover:bg-white/10"
                   >
                     Escribir por WhatsApp
