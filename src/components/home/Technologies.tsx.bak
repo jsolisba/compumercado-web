@@ -1,0 +1,123 @@
+import Container from "@/components/ui/Container";
+import Section from "@/components/ui/Section";
+
+const technologies = [
+  {
+    name: "Microsoft Azure",
+    category: "Cloud",
+    short: "Azure",
+  },
+  {
+    name: "Amazon Web Services",
+    category: "Cloud",
+    short: "AWS",
+  },
+  {
+    name: "Kubernetes",
+    category: "Containers",
+    short: "K8s",
+  },
+  {
+    name: "Docker",
+    category: "Containers",
+    short: "Docker",
+  },
+  {
+    name: "Terraform",
+    category: "Infrastructure as Code",
+    short: "TF",
+  },
+  {
+    name: "Linux",
+    category: "Infrastructure",
+    short: "Linux",
+  },
+  {
+    name: "GitHub",
+    category: "DevOps",
+    short: "GH",
+  },
+  {
+    name: "GitLab",
+    category: "DevOps",
+    short: "GL",
+  },
+  {
+    name: "Cloudflare",
+    category: "Security & Networking",
+    short: "CF",
+  },
+  {
+    name: "Grafana",
+    category: "Monitoring",
+    short: "GF",
+  },
+  {
+    name: "Prometheus",
+    category: "Monitoring",
+    short: "PM",
+  },
+  {
+    name: "Proxmox",
+    category: "Virtualization",
+    short: "PX",
+  },
+];
+
+export default function Technologies() {
+  const items = [...technologies, ...technologies];
+
+  return (
+    <Section className="overflow-hidden bg-white">
+      <Container>
+        <div className="mx-auto max-w-3xl text-center">
+          <div className="text-sm font-semibold uppercase tracking-wider text-blue-600">
+            Tecnologías
+          </div>
+
+          <h2 className="mt-4 text-4xl font-bold tracking-tight text-neutral-950 sm:text-5xl">
+            Tecnologías y plataformas con las que trabajamos.
+          </h2>
+
+          <p className="mt-6 text-lg leading-8 text-neutral-600">
+            Utilizamos tecnologías empresariales para diseñar, implementar,
+            proteger y administrar soluciones adaptadas a cada necesidad.
+          </p>
+        </div>
+
+        <div className="relative mt-14">
+          <div className="pointer-events-none absolute inset-y-0 left-0 z-10 w-20 bg-gradient-to-r from-white to-transparent" />
+
+          <div className="pointer-events-none absolute inset-y-0 right-0 z-10 w-20 bg-gradient-to-l from-white to-transparent" />
+
+          <div className="overflow-hidden">
+            <div className="flex w-max animate-[technologies-scroll_35s_linear_infinite] gap-5 hover:[animation-play-state:paused]">
+              {items.map((technology, index) => (
+                <article
+                  key={`${technology.name}-${index}`}
+                  className="w-[220px] shrink-0 rounded-2xl border border-neutral-200 bg-neutral-50 p-6 transition-all duration-300 hover:-translate-y-1 hover:border-blue-200 hover:bg-white hover:shadow-lg"
+                >
+                  <div className="flex items-center justify-between">
+                    <div className="flex h-12 w-12 items-center justify-center rounded-xl bg-blue-600 text-sm font-bold text-white">
+                      {technology.short}
+                    </div>
+
+                    <span className="text-xs font-medium uppercase tracking-wider text-neutral-400">
+                      {technology.category}
+                    </span>
+                  </div>
+
+                  <h3 className="mt-6 text-lg font-bold text-neutral-950">
+                    {technology.name}
+                  </h3>
+
+                  <div className="mt-3 h-1 w-10 rounded-full bg-blue-600" />
+                </article>
+              ))}
+            </div>
+          </div>
+        </div>
+      </Container>
+    </Section>
+  );
+}
